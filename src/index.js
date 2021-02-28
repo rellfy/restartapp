@@ -6,7 +6,7 @@ const getTimeString = () => `[${new Date().toLocaleString()}]`;
 
 app.use((request, response, next) => {
   let token = request.get("authorization");
-  if (token.startsWith("Bearer "))
+  if (token?.startsWith("Bearer "))
     token = token.substring(7);
   if (token != process.env.TOKEN)
     return response.status(401).send({ error: "missing valid authorization token" });
