@@ -1,0 +1,15 @@
+{
+  "name": "restartapp",
+  "version": "0.1.0",
+  "description": "API for restarting Docker containers",
+  "main": "src/index.js",
+  "repository": "https://github.com/rellfy/restartapp.git",
+  "author": "Lorenzo Fontoura <lorenzo@nioel.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
